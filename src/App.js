@@ -52,6 +52,7 @@ function App() {
           onChange={handleResponseBid}
           inputMode="decimal"
           pattern="[0-9]*"
+          type='tel'
           sx={{ background: "white" }}
           InputProps={{
             inputProps: {
