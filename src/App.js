@@ -51,6 +51,35 @@ const handleSubmit = (e) => {
     <div className="App">
 
       <header className="App-header">
+
+          <TextField
+        id="name"
+        label="Name"
+        variant="outlined"
+        sx={{background:"white"}}
+        inputProps={{ inputMode: "text", autoComplete: "name" }}
+      />
+
+      {/* Mobile input: numeric keypad */}
+      <TextField
+        id="mobile"
+        label="Mobile"
+        variant="outlined"
+        type="tel"
+        sx={{background:"white"}}
+        inputProps={{ inputMode: "numeric", pattern: "[0-9]*", autoComplete: "tel" }}
+      />
+
+      {/* Email input: email keyboard */}
+      <TextField
+        id="email"
+        label="Email"
+        variant="outlined"
+        type="email"
+        sx={{background:"white"}}
+        inputProps={{ autoComplete: "email" }}
+      />
+        <TextField id="quantity" label="Quantity" inputProps={{ inputMode: 'numeric' }}/>
         <TextField id="quantity" label="Quantity" inputProps={{ inputMode: 'numeric' }}/>
         <input type="number" pattern="[0-9]*" inputmode="numeric"></input>
         <input type="tel" pattern="[0-9]*" inputmode="numeric"></input>
